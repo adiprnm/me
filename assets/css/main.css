@@ -26,8 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 .w-full { width: 100%; };
 .block { display: block; }
 .mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
 .mt-8 { margin-top: 2rem; }
 .mt-16 { margin-top: 4rem; }
+.mt-20 { margin-top: 5rem; }
 .p-0 { padding: 0; }
 .pb-0 { padding-bottom: 0; }
 .pt-0 { padding-top: 0; }
@@ -89,4 +91,13 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 768px) {
     font-size: 20px;
   }
+}
+
+.sticky-top {
+  background-color: var(--pico-background-color);
+  position: sticky;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  top: 0;
+  z-index: 999;
 }
