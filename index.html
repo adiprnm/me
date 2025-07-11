@@ -211,7 +211,7 @@
       <p>Yuk kita ngobrol-ngobrol dulu aja via e-mail. Saya fast response kok 👍</p>
 
       <article>
-        <form target="_blank" action="mailto:adi@adipurnm.my.id" id="orderServiceForm" method="get">
+        <form method="get">
           <div>
             <label for="subject">Layanan</label>
             <select id="subject" name="subject" aria-label>
@@ -255,9 +255,10 @@
         event.preventDefault()
 
         const name = document.getElementById('name')
-        body.value = `Halo Adi, saya berminat untuk memesan layanan ${subject.value}.\n\n\nTerima kasih.\n${name.value}`
+        const subject = encodeURIComponent(document.getElementById('subject').value)
+        const body = encodeURIComponent(`Halo Adi, saya berminat untuk memesan layanan ${subject.value}.\n\n\nTerima kasih.\n${name.value}`)
 
-        orderServiceForm.requestSubmit()
+        window.location.href = `mailto:adi@adipurnm.my.id?subject=${subject}&body=${body}`
       })
 
       currentYear.textContent = new Date().getFullYear()
