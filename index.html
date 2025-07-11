@@ -214,7 +214,7 @@
         <form method="get">
           <div>
             <label for="subject">Layanan</label>
-            <select id="subject" name="subject" aria-label>
+            <select id="subject" name="subject" aria-label="Layanan">
               <option value="Pengembangan Landing Page">Pengembangan Landing Page</option>
               <option value="Pengembangan Website">Pengembangan Website</option>
               <option value="Pengembangan Aplikasi Web Custom">Pengembangan Aplikasi Web Custom</option>
@@ -255,10 +255,11 @@
         event.preventDefault()
 
         const name = document.getElementById('name')
-        const subject = encodeURIComponent(document.getElementById('subject').value)
-        const body = encodeURIComponent(`Halo Adi, saya berminat untuk memesan layanan ${subject.value}.\n\n\nTerima kasih.\n${name.value}`)
+        const subject = document.getElementById('subject')
+        const mailSubject = encodeURIComponent(subject.value)
+        const mailBody = encodeURIComponent(`Halo Adi, saya berminat untuk memesan layanan ${subject.value}.\n\n\nTerima kasih.\n${name.value}`)
 
-        window.location.href = `mailto:adi@adipurnm.my.id?subject=${subject}&body=${body}`
+        window.location.href = `mailto:adi@adipurnm.my.id?subject=${mailSubject}&body=${mailBody}`
       })
 
       currentYear.textContent = new Date().getFullYear()
