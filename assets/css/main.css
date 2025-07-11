@@ -48,8 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon {
   border-radius: 999px;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
 }
 
 .flex { display: flex; }
@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-center { text-align: center; }
 .text-green { color: #00A66E; }
 .text-primary { color: var(--pico-primary-background); }
+.text-gray { color: var(--pico-secondary-background); }
 
 .section-title {
   display: flex;
@@ -87,7 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 .site-description {
   font-size: 13px;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -104,3 +107,4 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mr-2 { margin-right: 0.5rem; }
+.h-max { height: max-content; }
