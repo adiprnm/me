@@ -96,5 +96,11 @@
   <footer class="text-center">
     <p>&copy; <span id="currentYear"></span> adipurnm</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      currentYear.textContent = new Date().getFullYear();
+    })
+  </script>
 </body>
 </html>
