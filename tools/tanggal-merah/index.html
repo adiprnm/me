@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanggal Merah Terdekat</title>
+  <meta name="description" content="Cek tanggal merah terdekat, lalu ambil cuti buat liburan">
+
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf">
+  <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <p>Tanggal merah terdekat<br/>berikutnya adalah...</p>
+      <div class="nearest-holiday">
+        <p style="text-decoration: none; font-size: 32px">🎉🎉🎉</p>
+        <h2 id="nearest-holiday-date">
+          <span class="loader"></span>
+        </h2>
+        <p id="nearest-holiday-name">
+          <span class="loader"></span>
+        </p>
+      </div>
+      <p id="date-diff">
+        <span class="loader"></span>
+      </p>
+      <a href="https://calendar.google.com" id="open-calendar-button" target="_blank" class="open-calendar">Ajukan Cuti di Google Calendar</a>
+
+      <p>atau</p>
+
+      <button onclick="toggleNationalHolidays(event)" class="toggle-national-holidays">Lihat Semua Hari Libur</button>
+
+      <div id="national-holidays" hidden>
+      </div>
+
+      <footer class="footer">
+        <p>
+          Sumber data berasal dari <a href="https://api-harilibur.vercel.app">api-harilibur.vercel.app</a> dan hanya mengambil hari libur nasional.
+        </p>
+
+        <p>Terinspirasi dari <a href="https://tanggalmerah.vercel.app/">https://tanggalmerah.vercel.app</a> dengan beberapa peningkatan.</p>
+
+        <p style="margin-top: 2rem;">Website by <a href="https://www.threads.com/@by.adipurnm" target="_blank">@by.adipurnm</a>.</p>
+
+        <a href="https://nihbuatjajan.com/adipurnm" class="primary" target="_blank">Traktir saya jajan</a>
+      </footer>
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", getNearestPublicHoliday)
+  </script>
+</body>
+</html>
