@@ -22,6 +22,10 @@
   border-radius: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "PT Serif", sans-serif;
 }
@@ -87,6 +91,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   margin-bottom: 4px;
   color: var(--pico-primary-background);
+
+  & a {
+    text-decoration: none;
+  }
 }
 .site-description {
   margin: 0;
@@ -110,3 +118,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .mr-2 { margin-right: 0.5rem; }
 .h-max { height: max-content; }
+.block { display: block; }
