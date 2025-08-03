@@ -30,6 +30,10 @@ body {
   font-family: "PT Serif", sans-serif;
 }
 
+a:has(> article) {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Serif", sans-serif;
 }
@@ -37,14 +41,17 @@ h1, h2, h3, h4, h5, h6 {
 .w-full { width: 100%; };
 .block { display: block; }
 .mt-4 { margin-top: 1rem; }
+.mb-0 { margin-bottom: 0; }
 .mb-4 { margin-bottom: 1rem; }
 .mt-8 { margin-top: 2rem; }
+.pl-6 { padding-left: 1.5rem!important; }
 .mt-16 { margin-top: 4rem; }
 .mt-20 { margin-top: 5rem; }
 .p-0 { padding: 0; }
 .pb-0 { padding-bottom: 0; }
 .pt-0 { padding-top: 0; }
 .px-4 { padding-left: 1rem; padding-right: 1rem; }
+.p-4 { padding: 1rem; }
 .overflow-hidden { overflow: hidden; }
 .project-image {
   width: 100%;
@@ -119,3 +126,15 @@ h1, h2, h3, h4, h5, h6 {
 .mr-2 { margin-right: 0.5rem; }
 .h-max { height: max-content; }
 .block { display: block; }
+.project-image--icon {
+  max-width: 72px;
+  aspect-ratio: 1;
+}
+.project-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}

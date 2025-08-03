@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ruby on Rails & WordPress developer">
+  <meta name="description" content="List e-book dan newsletter yang saya tulis.">
   <meta name="og:title" content="adipurnm">
-  <meta name="og:description" content="Ruby on Rails & WordPress developer">
+  <meta name="og:description" content="List e-book dan newsletter yang saya tulis.">
   <meta name="og:image" content="https://me.adipurnm.my.id/assets/images/adi-og.jpg">
   <meta name="og:type" content="website">
   <meta name="twitter:card" content="summary">
@@ -13,13 +13,13 @@
   <meta name="twitter:title" content="adipurnm">
   <meta name="twitter:site" content="@adi_prnm">
   <meta name="twitter:creator" content="@Adi Purnama">
-  <title>adipurnm: Ruby on Rails & WordPress developer.</title>
+  <title>E-book & newsletter | adipurnm</title>
   <link rel="icon" href="/assets/images/favicon.png">
   <link rel="stylesheet" href="/assets/css/pico.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf">
   <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf">
-  <link rel="preconnect" href="https://me.adipurmn.my.id">
+  <link rel="preconnect" href="https://me.adipurmn.my.id/ebooks">
   <script>
     {
       "@context": "https://schema.org",
@@ -28,7 +28,7 @@
         "@type": "Person",
         "name":"Adi Purnama"
       },
-      "description": "Ruby on Rails & WordPress developer",
+      "description": "List e-book dan newsletter yang saya tulis.",
       "headline": "adipurnm",
       "image": "https://me.adipurnm.my.id/assets/images/adi-og.jpg",
       "name": "Adi Purnama",
@@ -67,11 +67,53 @@
     </div>
   </header>
 
-  <main class="container" style="max-width: 800px;">
-    <section>
-      <a class="block w-full" href="/portfolio" role="button">Portfolio</a>
-      <a class="block w-full mt-4" href="/writings" role="button">E-book & Newsletter</a>
-      <a class="block w-full mt-4" href="/contact" role="button">Hubungi Saya</a>
+  <main class="container" style="max-width: 720px;">
+    <section id="ebook">
+      <h2 class="section-title">E-book</h2>
+
+      <div class="grid">
+        <article class="p-0 overflow-hidden">
+          <header class="pb-0">
+            <figure>
+              <img loading="lazy" src="/assets/images/the-programmers-mindset.webp" class="ebook-image" alt="The Programmer's Mindset">
+            </figure>
+          </header>
+
+          <section class="px-4">
+            <small class="text-gray"><s>Rp54.900</s></small>
+            <small class="text-green">Rp34.900</small>
+            <h3 class="text-primary">The Programmer's Mindset</h3>
+            <p>Mindset yang diperlukan untuk menjadi seorang programmer.</p>
+            <a href="/ebooks/the-programmers-mindset" role="button" target="_blank">Pelajari lebih lanjut</a>
+          </section>
+        </article>
+
+        <article class="p-0 overflow-hidden">
+          <header class="pb-0">
+            <figure>
+              <img src="/assets/images/self-hosting.webp" class="ebook-image" alt="Self-hosting dengan Dokku">
+            </figure>
+          </header>
+
+          <section class="px-4">
+            <small class="text-green">Gratis</small>
+            <h3 class="text-primary">Self-hosting dengan Dokku</h3>
+            <p>Langkah praktis untuk deploy aplikasi dengan mudah di VPS.</p>
+            <a href="/ebooks/self-hosting-dengan-dokku" role="button" target="_blank">Pelajari lebih lanjut</a>
+          </section>
+        </article>
+      </div>
+
+      <section class="mt-16">
+        <h2 class="section-title">Newsletter</h2>
+
+        <div>
+          <ul>
+            <li>22 Jul 25 – <a target="_blank" href="https://adipurnm.my.id/content-creator-nggak-harus-bikin-video">Content creator nggak harus bikin video</a></li>
+            <li>18 Jul 25 – <a target="_blank" href="https://adipurnm.my.id/tetap-termotivasi-dengan-target-realistis">Cara tetap termotivasi dengan tetap realistis</a></li>
+          </ul>
+        </div>
+      </section>
     </section>
   </main>
 
