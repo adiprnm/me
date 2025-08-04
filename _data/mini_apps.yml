@@ -1,0 +1,15 @@
+- name: Tanggal Merah Terdekat
+  image_url: /assets/images/tanggal-merah.webp
+  url: https://me.adipurnm.my.id/tools/tanggal-merah
+- name: Image to WebP
+  image_url: /assets/images/gaweeun.webp
+  url: "https://towebp.adipurnm.my.id"
+- name: "SimpleBlog: No-nonsense, self-hostable blogging platform."
+  image_url: /assets/images/simpleblog.webp
+  url: "https://github.com/adiprnm/simpleblog.git"
+- name: "SimpleStats: No-nonsense, self-hostable analytic platform."
+  image_url: /assets/images/simplestats.webp
+  url: "https://github.com/adiprnm/simplestats.git"
+- name: "neotodotxt.nvim: todo.txt in your NeoVim"
+  image_url: /assets/images/neotodotxt.webp
+  url: "https://github.com/adiprnm/neotodotxt.nvim"

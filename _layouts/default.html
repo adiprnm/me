@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf">
+    <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf">
+
+    {% if jekyll.environment == "production" %}
+      <script defer async src="https://stats.adipurnm.my.id/script.js" data-website="me.adipurnm.my.id"></script>
+    {% endif %}
+  </head>
+  <body>
+    <navbar class="navbar-sticky-top">
+      <div class="container" style="max-width: 800px">
+        <article>
+          {% for link in site.data.navlinks %}
+            <a href="{{ link.url }}">{{ link.name }}</a>
+          {% endfor %}
+        </article>
+      </div>
+    </navbar>
+
+    <main class="container" style="max-width: 800px;">
+      {{ content }}
+    </main>
+
+    <footer class="text-center">
+      <p><small>&copy; <span id="currentYear"></span> adipurnm</small></p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        currentYear.textContent = new Date().getFullYear()
+      })
+    </script>
+  </body>
+</html>

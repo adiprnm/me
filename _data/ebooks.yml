@@ -1,0 +1,11 @@
+- name: The Programmer's Mindset
+  description: Mindset yang diperlukan untuk menjadi seorang programmer.
+  image_url: /assets/images/the-programmers-mindset.webp
+  price: Rp54.900
+  sale_price: Rp34.900
+  url: /ebooks/the-programmers-mindset
+- name: Self-hosting dengan Dokku
+  description: Langkah praktis untuk deploy aplikasi dengan mudah di VPS.
+  image_url: /assets/images/self-hosting.webp
+  price: Gratis
+  url: /ebooks/self-hosting-dengan-dokku

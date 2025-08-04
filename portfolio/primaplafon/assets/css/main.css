@@ -6117,6 +6117,7 @@ a:has(> article) {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 .product-detail-overlay > h1 {
   color: white;
