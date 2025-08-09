@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+description: Tulisan-tulisan seputar web development.
+---
+
+<section class="mt-16">
+  {% include avatar.html %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="page-description">{{ page.description }}</p>
+</section>
+
+<section class="mt-16">
+  {% if site.posts.size == 0 %}
+    <p>Belum ada tulisan yang tersedia.</p>
+  {% else %}
+    {% for post in site.posts %}
+      <a href="{{ post.url }}">
+        <article>
+          <small class="text-muted">{{ post.date | date: "%B %d, %y" }}</small>
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p class="mb-0">{{ post.short_description }}</p>
+        </article>
+      </a>
+    {% endfor %}
+  {% endif %}
+</section>

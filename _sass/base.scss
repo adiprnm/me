@@ -29,6 +29,10 @@ a:has(> article) {
   text-decoration: none;
 }
 
+a article p {
+  color: var(--pico-h2-color);
+}
+
 article {
   border: 1px solid var(--pico-blockquote-border-color);
   transition: transform .3s ease-in-out;
@@ -192,3 +196,4 @@ h1, h2, h3, h4, h5, h6 {
 .rounded-full { border-radius: 9999px; }
 .active { color: var(--pico-color)!important; }
 .mt-0 { margin-top: 0; }
+.post-title { font-size: 1.25rem; }
