@@ -14,15 +14,7 @@
     {% endif %}
   </head>
   <body>
-    <navbar class="navbar-sticky-top">
-      <div class="container" style="max-width: 800px">
-        <article class="w-max rounded-full pr-6 pl-6">
-          {% for link in site.data.navlinks %}
-          <a href="{{ link.url }}" {% if link.url == page.url %}class="active"{% endif %}>{{ link.name }}</a>
-          {% endfor %}
-        </article>
-      </div>
-    </navbar>
+    {% include navbar.html %}
 
     <main class="container" style="max-width: 800px;">
       {{ content }}
