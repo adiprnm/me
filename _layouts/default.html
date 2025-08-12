@@ -10,7 +10,7 @@
     <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf">
 
     {% if jekyll.environment == "production" %}
-      <script defer async src="https://stats.adipurnm.my.id/script.js" data-website="{{ site.url }}"></script>
+      <script defer async src="https://stats.adipurnm.my.id/script.js" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}"></script>
     {% endif %}
   </head>
   <body>
