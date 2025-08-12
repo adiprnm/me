@@ -1,0 +1,7 @@
+- name: Tanggal Merah Terdekat
+  description: Lihat tanggal merah terdekat, lalu ajukan cuti.
+  path: /tools/tanggal-merah
+- name: URL Parser
+  description: Parse URL beserta query string ke format yang mudah dibaca.
+  path: /tools/url-parser
+

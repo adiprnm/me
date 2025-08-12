@@ -1,6 +1,6 @@
 - name: Tanggal Merah Terdekat
   image_url: /assets/images/tanggal-merah.webp
-  url: https://me.adipurnm.my.id/tools/tanggal-merah
+  url: https://dev.adipurnm.com/tools/tanggal-merah
 - name: Image to WebP
   image_url: /assets/images/gaweeun.webp
   url: "https://towebp.adipurnm.my.id"

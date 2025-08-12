@@ -2,6 +2,8 @@
   url: /
 - name: Portfolio
   url: /portfolio
+- name: Tools
+  url: /tools/
 - name: Kontak
   url: /contact
 - name: Blog

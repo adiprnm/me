@@ -1,10 +1,13 @@
+---
+title: Tanggal Merah Terdekat
+description: Cek tanggal merah terdekat, lalu ambil cuti buat liburan
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanggal Merah Terdekat</title>
-  <meta name="description" content="Cek tanggal merah terdekat, lalu ambil cuti buat liburan">
+  {% seo %}
 
   <link rel="icon" href="assets/favicon.svg">
   <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf">
@@ -44,9 +47,9 @@
 
         <p>Terinspirasi dari <a href="https://tanggalmerah.vercel.app/">https://tanggalmerah.vercel.app</a> dengan beberapa peningkatan.</p>
 
-        <p style="margin-top: 2rem;">Website by <a href="https://www.threads.com/@by.adipurnm" target="_blank">@by.adipurnm</a>.</p>
+        <p style="margin-top: 2rem;">Website by <a href="{{ site.url }}">adipurnm</a>.</p>
 
-        <a href="https://nihbuatjajan.com/adipurnm" class="primary" target="_blank">Traktir saya jajan</a>
+        <a href="{{ site.donation_url }}" class="primary" target="_blank">Traktir saya jajan</a>
       </footer>
     </div>
 
