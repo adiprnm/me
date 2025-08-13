@@ -12,6 +12,9 @@ description: Parse URL beserta query string ke format yang mudah dibaca.
   <link rel="icon" href="icon.svg">
   <link rel="stylesheet" href="pico.min.css">
   <link rel="stylesheet" href="main.css">
+  {% if jekyll.environment == "production" %}
+    <script defer async src="https://stats.adipurnm.my.id/script.js" data-website="{{ site.url | remove: 'https://' | remove: 'http://' }}"></script>
+  {% endif %}
 </head>
 <body>
   <main class="container">
