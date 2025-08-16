@@ -72,24 +72,24 @@ select {
 }
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Bold.ttf") format("truetype");
+  src: url("/portfolio/seblak-aduhai/assets/fonts/Inter-Bold.ttf") format("truetype");
   font-display: swap;
   font-weight: 600;
 }
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Regular.ttf") format("truetype");
+  src: url("/portfolio/seblak-aduhai/assets/fonts/Inter-Regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: url("/assets/fonts/BricolageGrotesque-ExtraBold.ttf") format("truetype");
+  src: url("/portfolio/seblak-aduhai/assets/fonts/BricolageGrotesque-ExtraBold.ttf") format("truetype");
   font-display: swap;
   font-weight: 600;
 }
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: url("/assets/fonts/BricolageGrotesque-Regular.ttf") format("truetype");
+  src: url("/portfolio/seblak-aduhai/assets/fonts/BricolageGrotesque-Regular.ttf") format("truetype");
   font-display: swap;
 }
 body {
