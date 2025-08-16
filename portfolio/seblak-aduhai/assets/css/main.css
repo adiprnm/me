@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+body {
+  background: #fafafa;
+  color: #000000;
+  font-family: "Inter";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bricolage Grotesque", serif;
+}
+
+a:has(> article) {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar-top {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  display: block;
+}
+
+.sticky-bottom {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.navbar-top-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px #dfdfdf;
+  z-index: 100;
+  background-color: white;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.product-wrapper {
+  columns: 2;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-bottom: 2px solid #DFDFDF;
+  overflow: hidden;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+a {
+  tap-highlight-color: transparent !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+[role=button] {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.card__product-image {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__product-price {
+  color: green;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.btn--primary {
+  background-color: #0172af;
+  border-bottom: 2px solid #a5c3d4;
+  color: #ffffff;
+}
+.btn--primary:active {
+  transform: translateY(2px);
+  border-bottom-color: transparent;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-primary {
+  color: #0172af;
+}
+
+.section-title {
+  color: #0172af;
+}
+
+.text-none {
+  text-decoration: none;
+}
+
+.black-color {
+  color: #000000;
+}
+
+.product-image {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph-reset p {
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  color: green;
+  font-weight: 600;
+}
+
+.bottom-nav-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background-color: white;
+  border: 1px solid #dfdfdf;
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  color: #888888;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.bottom-nav-item--active,
+.bottom-nav-item:hover {
+  background-color: #f4f4f4;
+  color: #444444;
+}
+
+.bottom-nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.font-heading {
+  font-family: "Bricolage Grotesque";
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
