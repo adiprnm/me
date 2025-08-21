@@ -19,10 +19,12 @@ description: List boring tools yang bermanfaat, setidaknya bagi saya sendiri.
 </header>
 
 <section class="mt-8">
-  {% for tool in site.data.tools %}
-    <a class="block w-full mt-4" href="{{ tool.path }}" role="button">
-      <strong>{{ tool.name }}</strong><br>
-      <small>{{ tool.description }}</small>
-    </a>
-  {% endfor %}
+  <ul>
+    {% for tool in site.data.tools %}
+      <li>
+        <a href="{{ tool.path}}">{{ tool.name}}</a><br>
+        <small>{{ tool.description }}</small>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
