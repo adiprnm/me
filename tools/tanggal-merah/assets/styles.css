@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "PT Serif";
-  src: url("/assets/fonts/PTSerif-Regular.ttf") format("truetype");
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("/assets/fonts/PTSerif-Bold.ttf") format("truetype");
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-Bold.ttf") format("truetype");
   font-display: swap;
   font-weight: 600;
 }
 
 body {
   background-color: #f2f7fa;
-  font-family: "PT Serif", serif;
+  font-family: "Figtree", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -24,7 +24,6 @@ button {
 }
 
 .container {
-  max-width: 600px;
   margin: 64px auto 0 auto;
 }
 
@@ -59,7 +58,6 @@ button {
   border-radius: 100px;
   color: white;
   text-decoration: none;
-  font-size: small;
   margin-top: 16px;
   animation: bounce 1s infinite;
 }
@@ -71,7 +69,6 @@ button {
   border-radius: 100px;
   color: white!important;
   text-decoration: none;
-  font-size: small;
   margin-top: 16px;
   margin: 0 auto;
 }
@@ -90,10 +87,11 @@ p {
 }
 
 .footer {
+  font-size: 13px;
   text-align: center;
-  font-size: 12px;
-  padding: 32px;
+  padding: 16px;
   line-height: 1.5em;
+  margin-bottom: 2rem;
 }
 
 .footer a {
@@ -112,7 +110,7 @@ p {
 }
 
 #national-holidays {
-  font-size: 14px;
+  font-size: 16px;
   padding: 0;
   width: 80%;
   max-height: 300px;
@@ -142,6 +140,7 @@ p {
 }
 
 .toggle-national-holidays, .outline {
+  font-size: 1rem;
   color: #0172ad;
   background-color: transparent;
   border: 1px solid #0172ad;

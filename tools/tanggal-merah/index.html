@@ -10,8 +10,8 @@ description: Cek tanggal merah terdekat, lalu ambil cuti buat liburan
   {% seo %}
 
   <link rel="icon" href="assets/favicon.svg">
-  <link rel="preload" href="/assets/fonts/PTSerif-Regular.ttf">
-  <link rel="preload" href="/assets/fonts/PTSerif-Bold.ttf">
+  <link rel="preload" href="/assets/fonts/Figtree-Regular.ttf">
+  <link rel="preload" href="/assets/fonts/Figtree-Bold.ttf">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/script.js"></script>
   {% if jekyll.environment == "production" %}
@@ -21,7 +21,7 @@ description: Cek tanggal merah terdekat, lalu ambil cuti buat liburan
 <body>
   <div class="container">
     <div class="wrapper">
-      <p>Tanggal merah terdekat<br/>berikutnya adalah...</p>
+      <p style="margin-top: 4rem;">Tanggal merah terdekat<br/>berikutnya adalah...</p>
       <div class="nearest-holiday">
         <p style="text-decoration: none; font-size: 32px">🎉🎉🎉</p>
         <h2 id="nearest-holiday-date">
@@ -50,9 +50,9 @@ description: Cek tanggal merah terdekat, lalu ambil cuti buat liburan
 
         <p>Terinspirasi dari <a href="https://tanggalmerah.vercel.app/">https://tanggalmerah.vercel.app</a> dengan beberapa peningkatan.</p>
 
-        <p style="margin-top: 2rem;">Website by <a href="{{ site.url }}">adipurnm</a>.</p>
-
-        <a href="{{ site.donation_url }}" class="primary" target="_blank">Traktir saya jajan</a>
+        <p style="margin-top: 2rem; font-size: 1rem;">Website by <a href="{{ site.url }}">adipurnm</a>.</p>
+        <a href="{{ site.donation_url }}" class="primary" target="_blank" style="font-size: 1rem;">Traktir saya jajan</a>
+        <a href="/tools" style="text-align: center; display: block; font-size: 1rem; margin-top: 2rem;">Lihat tools lainnya</a>
       </footer>
     </div>
 
