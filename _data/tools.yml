@@ -4,4 +4,7 @@
 - name: URL Parser
   description: Parse URL beserta query string ke format yang mudah dibaca.
   path: /tools/url-parser
+- name: Text Obfuscator
+  description: Samarkan tulisan mulai pada paragraf tertentu.
+  path: /tools/text-obfuscator
 
